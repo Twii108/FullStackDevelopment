@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: bisque;
+            }
+            div{
+                position: relative;
+                animation-name: example;
+                width: 200px;
+                height: 200px;
+                background-color: rgb(71, 9, 9);
+                animation-duration: 2s;
+                animation-delay: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in;
+                margin: auto;
+               
+            }
+            @keyframes example{
+                0%{background-color: rgb(88, 5, 5);
+                color: aliceblue;
+            top:0px;left:0px}
+            25%{
+                background-color: #eb7777;
+                color: azure;
+                top:0px;left:200px;
+            }
+            50%{
+                 background-color: #eb7777;
+                color: azure;
+                top:200px;left:200px;
+            }
+            75%{
+                 background-color: #eb7777;
+                color: azure;
+                top:200px;left:0px;
+            }
+            100%{
+                 background-color: #eb7777;
+                color: azure;
+                top:0px;left:0px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

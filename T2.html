@@ -1,0 +1,42 @@
+<!-- create a css program that demonstret the use of multiple transition on a single element
+ when the user hover over the div , it should inrese in size, change bg color, rotete 360 deg,become circular,all with smooth timing
+ ,delay and dif. transiction duration-->
+
+ <html>
+    <head>
+        <style>
+            body{
+                background-color: beige;
+                transition-duration: 3s,4s,6s,6s,5s;
+                transition-delay: 0.5s;
+                transition-timing-function: ease-in-out;
+            }
+            body:hover{
+                background-color: rgb(151, 118, 68) ;
+                transform: rotate(360deg);
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(151, 118, 68);
+                transition-property: width , height, background-color,border-radius,transform;
+                transition-duration: 3s,4s,6s,6s,5s;
+                transition-delay: 0.5s;
+                transition-timing-function: ease-in-out;
+                margin: 50%;
+
+            }
+            div:hover{
+                width: 200px;
+                height: 200px;
+                background-color: beige;
+                transform: rotate(360deg);
+                border-radius: 50%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+ </html>

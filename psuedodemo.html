@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: green;
+            background-color: pink;
+        }
+        a:visited{
+            color: black;
+            background-color: lime;
+        }
+        a:hover{
+            font-size: 40px;
+        }
+        a:active{
+            text-decoration: none;
+            color: gold;
+            background-color: black;
+        }
+        .d>p:nth-child(3){
+            background-color: yellow;
+        }
+        div:not(.sp){
+            color: red;
+            background-color: pink;
+        }
+        h1:hover{
+            color: blue;
+            background-color: aqua;
+            font-size: 30px;
+        }
+        input:focus{
+            background-color: lightblue;
+            color: hotpink;
+            font-size: 25px;
+        }
+        h1::before{
+            content: url("small1.jfif");
+            color: red;
+        }
+         h1::after{
+            content: "♥♥♥♥";
+            color: red;
+        }
+
+        p::first-line{
+            color: blue;
+        }
+        p::first-letter{
+            background-color: pink;
+            font-size: 40px;
+            color: purple;
+        }
+        ul>li::marker{
+            color: orange;
+            font-size: 30px;
+
+        }
+        p::selection{
+            background-color: black;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <a href="#">link1</a>
+    <a href="##">link2</a>
+    <a href="###" id="l">link3</a>
+    <a href="####">link4</a>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, fuga dolore incidunt corporis voluptatibus sunt aut modi dolorem quod esse, veritatis autem quaerat. Perferendis consectetur tempora natus sapiente sunt assumenda autem, laboriosam sequi, soluta, illo expedita voluptatum quo nisi alias. Impedit, repudiandae! Alias laboriosam laborum accusantium voluptatibus molestias nobis iure incidunt eveniet perspiciatis error ex dignissimos, culpa expedita ratione cupiditate dolores optio delectus. Ea dolorum sapiente fuga totam consequatur veritatis ut! Tempore commodi quidem reprehenderit laborum doloremque aut voluptatem rem eius voluptatum soluta, eum consequuntur quam quasi quae distinctio totam maiores architecto. Voluptates nisi, perspiciatis doloribus quos vel et eum consequuntur nam ad tempore id magnam saepe reiciendis nihil cumque illo voluptatem facilis praesentium eius quisquam eaque quidem natus eos. Saepe excepturi sint molestias voluptatum. Minus deserunt odio laborum eius, laboriosam temporibus esse similique nemo, dolorum voluptatum delectus velit eaque provident suscipit cupiditate dolor nobis. Illum ullam, deserunt sunt officiis eos neque aperiam iste voluptatibus, possimus temporibus, minus error sit eum. Provident asperiores repudiandae iste, ad mollitia eaque quis nam consectetur officia natus id, harum incidunt similique aut repellat ex recusandae eos ab. Labore odio vero minus et. Consectetur eaque impedit quos modi officiis, necessitatibus veniam. Aspernatur iste culpa fugiat?</p>
+
+    <div class="d">
+        <p>hello1</p>
+        <p>hello2</p>
+        <p>hello3</p>
+        <p>hello4</p>
+        <p>hello5</p>
+    </div>
+
+
+    <div class="sp">abc</div>
+    <div class="c">abc</div>
+    <div class="c">abc</div>
+
+    <form>
+        Firstname:<input type="text" placeholder="Enter name">
+    </form>
+
+    <ul>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+    </ul>
+    <ol>
+        <li>pqr</li>
+        <li>pqr</li>
+        <li>pqr</li>
+        <li>pqr</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!-- use apropreate selectors to complete following...
+ 1.create a nestedlistas given.all the directchild li must have color brown and size 20px.all the nested li must have 
+ color orange and size 30px
+
+ 2.create a table with 3 rows odd row having bcolor pink  and even rows having bcolor yellow
+
+ 3.create a form with one text box,one email and two buttones.use attibutes selectors for different bcolor
+ for each input type
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+       ul li{
+        color:orange;
+        font-size: 30px;
+      }
+      ul>li{
+        color: brown;
+        font-size: 20px;
+      }
+    .pinkt{
+        background-color: pink;
+    }
+    .yellowt{
+        background-color: yellow;
+    }
+    [type="text"]{
+        background-color: lightgray;
+    }
+    [type="email"]{
+        background-color:lightblue;
+    }
+    [type="button"]{
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <ul type="disc">
+        <li> Apples</li>
+        <ol type="1">
+            <li>green</li>
+            <li>Red</li>
+        </ol>
+        <li>Pineapple</li>
+        <li>DragonFruit</li>
+        <ol type="a">
+            <li>White</li>
+            <li>Red</li>
+        </ol>
+    </ul>
+
+    <table border="3px" heigth="100px" width="100px">
+        <tr align="center" class="pinkt">
+            <td>a</td>
+            <td>d</td>
+        </tr>
+        <tr align="center" class="yellowt">
+            <td>b</td>
+            <td>e</td>
+        </tr>
+        <tr align="center" class="pinkt">
+            <td>c</td>
+            <td>f</td>
+        </tr>
+    </table><br><br>
+
+
+    <form>
+        <label>First Name:<input type="text" placeholder="First Name"></label><br><br>
+        <label>E-mail:<input type="email" placeholder="E-mail"></label><br><br>
+        <input type="button" value="b1">
+        <input type="button" value="b2">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            .grid-fr{
+                display:grid;
+                grid-template-columns: 200px 200px 2fr;
+                grid-template-rows: 1fr 2fr;
+                gap: 10px;
+                background-color: beige;
+                padding: 10px;
+                margin-bottom: 40px;
+
+
+            }
+            .grid-repeat{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: 1fr 3fr;
+                height: 150px;
+                gap: 10px;
+                background-color: gray;
+                padding: 10px;
+            }
+            .item{
+                background-color: rgb(97, 87, 72);
+                color: azure;
+                text-align: center;
+                padding: 20px;
+                border-radius: 30px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-fr">
+            <div class="item">200fr</div>
+            <div class="item">1fr</div>
+            <div class="item">2fr</div>
+            <div class="item">1fr</div>
+        </div>
+        <div class="grid-repeat">
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+             <div class="item">1fr</div>
+        </div>
+    </body> 
+</html>

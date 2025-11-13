@@ -1,0 +1,18 @@
+p{
+    background-color: pink;
+
+}
+p::first-line{
+    color: rgb(22, 172, 127);
+    font-style: italic;
+}
+h1::selection,h2::selection{
+    background-color: gray;
+}
+ol{
+    color: bisque;
+    font-size: 30px;
+}
+li:nth-child(3){
+    color: rgb(61, 23, 23);
+}

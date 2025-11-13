@@ -1,0 +1,48 @@
+
+<!--registration form : name, pass, contact num. , gender, submit and reset button.
+ follow below requirments
+1. while clicking on name text, bg color of its input field change to light green.
+2. while hovering on password and contact no. text , font size of its input field 
+   will increse respetively . 
+3. while clicking on gender field bg color of the text should change to blue
+4. both submit and reset button should bold and italic while hovering .  -->
+
+<html>
+    <head>
+        <style>
+            .a:active{
+                background-color: aquamarine
+            }
+            .b:hover{
+                font-size: larger;
+            }
+            .c:active{
+                background-color: rgb(63, 63, 241)
+            }
+            .d:hover{
+                font-style: italic;
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="Name">Name : </label>
+            <input class="a" type="text" id="Name"><br>
+            <label for="password">Password : </label>
+            <input class="b" type="password" id="password"><br>
+            <label for="contact"> Contact No. : </label>
+            <input  class="b" type="tel" id="contact"><br>
+            <label for="i0" class="c"> <input  type="radio" name="gender" id="i0">Male</label>
+            <label for="i1" class="c"><input class="c" type="radio" name="gender" id="i1">Female </label><br>
+            <input type="submit" class="d">
+            <input type="reset" class="d">
+            
+
+
+        </form>
+    </body>
+</html>
+

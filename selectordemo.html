@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*1.universal*/
+    *{
+        text-align: center;
+    }
+
+    /*2.element*/
+    div{
+        text-align: left;
+    }
+
+    /*3.id selector*/
+    #a
+    {
+        text-align: right;
+        color: red;
+    }
+    div#a
+    {
+        color: blue;
+    }
+    /*4.class selector*/
+    .bluet{
+        color: blue;
+        background-color: aqua;
+    }
+    .greent{
+        color: green;
+        background-color: lightgreen;
+    }
+    .demo
+    {
+        font-size: 50px;
+    }
+
+    div.greent
+    {
+        font-size: 30px;
+        color: grey;
+    }
+    p.greent{
+        font-size: 100px;
+    }
+    /*5.child*/
+    div>p{
+        color: purple;
+        text-align: left;
+    }
+    /*6.decendent*/
+    div p{
+        color: silver;
+        text-align: right;
+    }
+
+    /*7.Grouping*/
+    p,div,a,article{
+        color: magenta;
+    }
+    /*attributes*/
+    a[target]
+    {
+        color: hotpink;
+        background-color: peachpuff;
+    }
+    </style>
+</head>
+<body>
+    <h1>Types of selector</h1>
+    <div id="a" class="bluet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse hic nam sit maiores in. Eligendi beatae non repudiandae blanditiis soluta.</div>
+    <div class="bluet demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dicta voluptas quibusdam voluptate consequuntur enim modi sunt veniam sed sapiente.</div>
+    <div class="bluet">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, sed porro praesentium vel temporibus facere obcaecati ducimus quas eligendi soluta!</div>
+    <div class="greent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam voluptas inventore amet et accusantium reprehenderit maiores error perferendis vero.</div>
+    <div class="greent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iure aspernatur rem magni fugit modi blanditiis harum ipsum ullam id.</div>
+    <p class="greent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quos!</p>
+    <div>demo div  
+        <p>this is para 1</p>
+        <article>demo article  
+            <p>this is para 2</p>
+        </article>
+        <p>this para 3</p>
+    </div>
+
+    <a href="F2.html">link to file 1</a><br><br>
+    <a href="F2.html" target="_self">link to file 2</a><br><br>
+    <a href="F2.html" target="_blank">link to file 3</a>
+</body>
+</html>

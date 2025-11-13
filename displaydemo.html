@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border: 3px solid blue;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            display: none;
+        }
+        .b:hover>.a{
+            display: block;
+        }
+        .fc{
+            background-color: pink;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            /* height: 500px; */
+            align-items:center;
+            /* width: 500px;
+            flex-wrap: wrap-reverse;
+            gap: 20px 50px; */
+        }
+        .box{
+            padding: 20px;
+            font-size: 20px;
+            border: 2px solid red;
+            text-align: center;
+            background-color: aqua;
+            /* flex-basis: 200px; */
+            flex-shrink: 1;
+        }
+        #b2{
+            order: -7000;
+        }
+        #b4{
+            order: 0;
+            /* flex-grow: 5; */
+            flex-shrink: 5;
+        }
+        #b5{
+            order: 5;
+        }
+        #b3{
+            order: 30;
+        }
+        #b1{
+            order: 500;
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+        }
+        .gc{
+            background-color: orange;
+            display: grid;
+            grid-template-rows:100px 100px 100px;
+            grid-template-columns: repeat(3,100px);
+            gap: 20PX 20PX;
+        }
+        .gbox{
+            font-size: 20px;
+            border: 3px solid brown;
+            background-color: lime;
+            padding: 10px;
+            text-align: center;
+
+        }
+        #g1{
+            grid-row: 1/3;
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="b">Hover me
+    <div class="a">hello div</div>
+    <span class="a">hello span</span> 
+    </div>
+    <div class="fc">
+        <div class="box" id="b1">box-1</div>
+        <div class="box" id="b2">box-2</div>
+        <div class="box" id="b3">box-3</div>
+        <div class="box" id="b4">box-4</div>
+        <div class="box" id="b5">box-5</div>
+    </div>
+    <div class="gc">
+        <div class="gbox" id="g1">gbox-1</div>
+        <div class="gbox" id="g2">gbox-2</div>
+        <div class="gbox" id="g3">gbox-3</div>
+        <div class="gbox" id="g4">gbox-4</div>
+        <div class="gbox" id="g5">gbox-5</div>
+        <div class="gbox" id="g6">gbox-6</div>
+        <div class="gbox" id="g7">gbox-7</div>
+        <div class="gbox" id="g8">gbox-8</div>
+        <div class="gbox" id="g9">gbox-9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">`
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     @keyframes ani1{
+        0%{
+            background-color:orange;
+           transform:  translate(0px) rotate(0deg);
+        }
+        25%
+        {
+            background-color: green;
+            transform: translateX(200px) rotate(90deg);
+        }
+        50%{
+            background-color: red;
+            transform: translate(200px,200px) rotate(180deg);
+        }
+        75%{
+            background-color: blue;
+            transform: translateY(200px) rotate(270deg);
+        }
+        100%{
+            background-color: orange;
+            transform: translate(0px) rotate(360deg);
+        }
+     }
+      div{
+        height: 200px;
+        width: 200px;
+        /* background-color: orange; */
+        animation-name: ani1;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in;
+        animation-direction: alternate; 
+        animation-iteration-count: 5; 
+     } 
+    </style>
+</head>
+<body>
+    <div> </div>
+</body>
+</html>

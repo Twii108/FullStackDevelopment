@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+        img{
+            height: 200px;
+            width: 200px;
+         
+        }
+        #i1{
+           border-radius: 50%;
+           transition: all 35;
+        }
+        #i1:hover{
+            transform:scaleX(-1);
+        }
+        #i2{
+            opacity: 0.5;
+        }
+        #i3{
+            max-width: 100%;
+            height: auto;
+        }
+        #p4{
+           position: relative;
+           height: 200px;
+           width: 200px;
+        }
+        #i4{
+            opacity: 0.5;
+        }
+        #l{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        #r{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        #i5{
+            border:2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #i5:hover{
+            box-shadow: 5px 5px 5px gray;
+        }
+    </style>
+</head>
+<body>
+    <img src="big.jpg" alt="" id="i1">
+    <img src="big.jpg" alt="" id="i2">
+    <img src="big.jpg" alt="" id="i3">
+   <div id="p4">
+    <img src="big.jpg" alt="" id="i4">
+    <div id="l">Hello left</div>
+    <div id="r">Hello right</div>
+   </div> 
+   <img src="big.jpg" alt="" id="i5"> 
+</body>
+</html>

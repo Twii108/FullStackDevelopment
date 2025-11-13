@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid blue;
+        text-align: center;
+        line-height: 200px;
+        font-size: 50px;
+
+       }
+       #b1{
+        position: static;
+        top: 5000px;
+        left: 2000px;
+       }
+       #b2{
+        position: relative;
+        top: 100px;
+        left: 250px;
+       }
+       #b3{
+        position: absolute;
+        /* bottom:0px;
+        right:0px; */
+        left: 250px;
+        top:30px
+       }
+       #b4{
+        position: relative;
+       }
+       #c4{
+        border: 2px solid orange;
+        font-size: 16px;
+        line-height: normal;
+        padding: 5px;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+       }
+       #b5{
+          position: fixed;
+          top: 0px;
+          right: 0px;
+       }
+       #b6{
+        border: 2px solid blue;
+        padding: 10px;
+        height: 200px;
+        width: 500px;
+        overflow:auto;
+       }
+       #c6{
+        background-color: black;
+        color: pink;
+        position: sticky;
+        top: 0px;
+       }
+       #b7{
+        border: 2px solid blue;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        background-color: red;
+        position: relative;
+        z-index: 50;
+       }
+       #b8{
+        border: 2px solid blue;
+        height: 200px;
+        width: 200px;
+        position: relative;
+        text-align: center;
+        background-color: blue;
+        bottom: 80px;
+        left: 50px;
+        z-index: 5;
+       }
+       #b9{
+        background-color: orange;
+        position: relative;
+         height: 200px;
+        width: 200px;
+        left: 150px;
+        bottom: 350px;
+        z-index: 55;
+       }
+    </style>
+</head>
+<body>
+    <div class="box" id="b1">box-1</div>
+    <div class="box" id="b2">box-2</div>
+    <div class="box" id="b3">box-3</div>
+    <div class="box" id="b4">box-4
+        <div id="c4">C4</div>
+    </div>
+    <div class="box" id="b5">box-5</div>
+
+    <div id="b6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque dolorem repellendus corrupti similique minus ipsum fugiat omnis molestias, aut quia illum quos reprehenderit libero delectus. Magnam cumque amet beatae sit sed maiores aut. Corrupti saepe soluta, fugiat voluptate, error provident obcaecati doloribus quisquam vero perspiciatis voluptatem, illo expedita neque animi molestiae esse ipsam deserunt! Sequi corporis minus ratione eius, tempora hic praesentium provident repellendus, distinctio, fugiat excepturi sapiente veniam? Eaque iste corporis ullam laudantium quasi inventore corrupti assumenda accusamus excepturi? Incidunt cumque dicta expedita modi. Cumque est ipsa itaque impedit hic doloremque minus amet eos ad rerum, doloribus id rem necessitatibus exercitationem distinctio magnam explicabo quia error voluptates sequi cupiditate, dolorem aperiam possimus voluptatum. Libero voluptas, earum eveniet aperiam nemo veritatis animi sequi sunt esse quam exercitationem incidunt pariatur unde asperiores voluptatem quia non odio iure excepturi, vero architecto soluta! Quae, deserunt aliquam at, consequuntur beatae nisi facere saepe voluptate neque debitis repellat, adipisci ipsam quis blanditiis quaerat exercitationem? Aut id obcaecati labore deserunt impedit, sed nisi voluptate modi possimus quae autem quibusdam assumenda? Assumenda omnis, architecto deserunt perferendis ullam eius inventore eligendi numquam laudantium eos est doloremque nemo reiciendis atque animi ratione! Recusandae quidem quaerat soluta delectus ullam error molestias, asperiores minima earum veniam rerum eligendi debitis tempora officia nulla aliquam dolores dolor expedita provident! Ducimus sint nesciunt voluptatibus quis perferendis ratione mollitia, quas molestias repellendus eos id ea voluptates cumque expedita dolorem tempore quibusdam! Rem repellendus, culpa hic fuga a provident sequi quam eum, ipsam nam quos ipsa voluptas iusto consequatur porro voluptates dignissimos ullam dolores corporis ea laudantium. Debitis incidunt, soluta cum unde, reprehenderit iste deleniti dolorem eos dolorum optio libero, mollitia odit voluptas eveniet qui fugit dignissimos fuga dolores corrupti repudiandae assumenda reiciendis perferendis dicta? Illum deserunt alias consequatur repudiandae unde iure, minus commodi corporis placeat?<h1 id="c6">I Will Stick</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, aperiam in magnam, dolorum earum porro unde maxime deleniti assumenda maiores quam rem alias architecto eligendi explicabo tempora non odit ad perspiciatis veritatis atque cupiditate! Excepturi sunt vitae sint! Consequatur quo expedita culpa deserunt, labore veritatis accusantium, illo eveniet magnam, fuga hic molestias praesentium! Non voluptas hic dolorum libero. Asperiores tempore quidem, praesentium impedit fugiat, veritatis at, inventore maiores obcaecati accusamus quod exercitationem. Quisquam, deleniti doloribus labore commodi dolores similique, ducimus totam officia velit debitis, sapiente aut doloremque veniam minus laboriosam fugiat praesentium cupiditate harum! Rerum nam, illum suscipit, necessitatibus, nihil molestiae debitis labore ducimus soluta libero voluptatibus dignissimos harum. Et ipsam enim cupiditate quaerat nemo! Neque iste officia mollitia sunt unde praesentium tempore quod saepe ratione sit, magni possimus est quae, quasi culpa? Amet saepe dolorum commodi et facere reiciendis fugit impedit, molestiae odio reprehenderit optio ipsum quos rerum deserunt ipsam, laboriosam temporibus aperiam mollitia, possimus similique soluta voluptatem? Quasi perspiciatis, odit, sequi provident sint, natus rem deleniti atque quos in quibusdam! Sunt ex natus fugit accusamus corporis dicta vero. Maiores, repellat animi? Impedit accusamus corrupti nesciunt hic sed tempora nemo veritatis exercitationem nobis autem, illo eligendi aut numquam obcaecati dolorum sapiente assumenda similique dolores? Voluptatibus sed quos quasi fugiat. Animi commodi recusandae deserunt minima nobis ab, explicabo corporis vitae dicta. Eius ducimus optio velit maxime quibusdam accusamus fuga, debitis et in ab nemo consequatur impedit earum id error vitae odit qui atque rem, sit tempore at ratione obcaecati. Quos itaque blanditiis dolores earum eum ipsam veritatis dolorum, vel asperiores unde laboriosam laudantium aliquam repellat eveniet nobis, aspernatur, consequuntur accusamus deserunt quidem tempora neque reprehenderit cupiditate officiis sit. Quia, unde maiores. Illo, ab ipsum dicta obcaecati debitis rerum officia et distinctio ex laboriosam voluptate quia, repellendus eos, perferendis itaque maxime.</div>
+    <div  id="b7">box-7</div>
+    <div id="b8">box-8</div>
+    <div id="b9">box-9</div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- crate an html page using bootstrap that contains
+1. a button labled show detail,when clicked it should open collapse section clicking again section should hide.
+2. inside the collapse area add a para , list of at list 3 item an a small image. 
+3. add a card layout inside the collapse.use bootstrap classes only -->
+
+<html>
+    <head>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </head>
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#abc">
+        Show Details
+    </button>
+    <div class="collapse" id="abc">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, nostrum soluta.</p>
+                <ul>
+                    <li>AAAAGGGGGGGG!!!!!!!</li>
+                    <li>AAAAGGGGGGGG!!!!!!!</li>
+                    <li>AAAAGGGGGGGG!!!!!!!</li>
+                    <li>AAAAGGGGGGGG!!!!!!!</li>
+                </ul>
+                <img src="1.jpg" class="card-img-top">
+            </div>
+        </div>
+    </div>
+</html>
